@@ -1,0 +1,23 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.nodePath": ".yarn/sdks",
+  "eslint.options": {
+    "ignorePath": ".gitignore"
+  },
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+  ],
+  "search.exclude": {
+    "**/.instanbul_output": true,
+    "**/.tap_output": true,
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "editor.formatOnSave": true
+}

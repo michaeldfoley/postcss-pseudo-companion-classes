@@ -1,0 +1,158 @@
+:root {
+  color: blue;
+}
+
+::selection,
+:global(.\:selection) {
+  background-color: mintcream;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:global(.\:hover) {
+  text-decoration: underline;
+}
+
+a:active,
+a:global(.\:active) {
+  font-weight: bold;
+}
+
+a:hover,
+a:focus,
+a:global(.\:hover),
+a:global(.\:focus) {
+  font-weight: bold;
+}
+
+a.lol:active,
+a.lol:global(.\:active) {
+  font-weight: normal;
+}
+
+a:nth-child(5),
+a:global(.\:nth-child\(5\)) {
+  border: 1px solid papayawhip;
+}
+
+a:hover:focus,
+a:global(.\:hover):global(.\:focus) {
+  font-weight: bold;
+}
+
+a:before {
+  color: white;
+}
+
+a::before {
+  color: white;
+}
+
+a:before,
+a::before {
+  color: white;
+}
+
+a:hover::before,
+a:global(.\:hover)::before {
+  border-top-color: blue;
+}
+
+a:active:focus:hover::after,
+a:global(.\:active):global(.\:focus):global(.\:hover)::after {
+  border-bottom-color: blue;
+}
+
+a:active:focus + div:hover,
+a:global(.\:active):global(.\:focus) + div:global(.\:hover) {
+  color: magenta;
+}
+
+:global a {
+  border-top-color: burlywood;
+}
+
+:global(a) {
+  color: firebrick;
+}
+
+:global a:hover,
+:global a:global(.\:hover) {
+  color: peachpuff;
+}
+
+:global a:hover b:focus,
+:global a:global(.\:hover) b:global(.\:focus) {
+  color: thistle;
+}
+
+:global(a:hover),
+:global(a:global(.\:hover\)) {
+  color: cadetblue
+}
+
+:global(a:hover) b:focus,
+:global(a:global(.\:hover\)) b:global(.\:focus) {
+  color: whitesmoke;
+}
+
+:host {
+  color: blue;
+}
+
+:host-context(a) {
+  color: blue;
+}
+
+:host([disabled]) {
+  opacity: .4;
+}
+
+:host([enabled]) {
+  opacity: 1;
+}
+
+a:hover, :host,
+a:global(.\:hover) {
+  color: blue;
+}
+
+.block .element:active,
+.block .element:global(.\:active) {
+  color: blue;
+}
+
+:host .block .element:active,
+:host .block .element:global(.\:active) {
+  color: blue;
+}
+
+/*test multiple pseudo classes on one element but one is excluded (:host)
+ no useful css rule, but another pseudo class, like :nth-child could be added
+ by the user.
+ */
+.element:host:active,
+.element:host:global(.\:active) {
+  color:blue
+}
+
+/*test :host (excluded) with modifier class on host (element)*/
+.hostVariant:host .block .element:active,
+.hostVariant:host .block .element:global(.\:active) {
+  color: blue;
+}
+
+/*test :host (excluded) with modifier class on host (element)*/
+:host.hostVariant .block .element:active,
+:host.hostVariant .block .element:global(.\:active) {
+  color: blue;
+}
+
+/*test :host (excluded) with id on host (element)*/
+:host#specialVariantId .block .element:active,
+:host#specialVariantId .block .element:global(.\:active) {
+  color: blue;
+}

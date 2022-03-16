@@ -1,0 +1,49 @@
+{
+  "name": "postcss-pseudo-companion-classes",
+  "version": "0.1.0",
+  "description": "PostCSS plugin to add companion classes to pseudo-classes for testing purposes (works with css modules)",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "css test",
+    "pseudo classes",
+    "css modules"
+  ],
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "eslint .",
+    "publish": "clean-publish",
+    "prerelease": "yarn test && yarn lint",
+    "release": "standard-version"
+  },
+  "author": "Michael Foley <michaeldfoley@gmail.com>",
+  "license": "MIT",
+  "repository": "michaeldfoley/postcss-pseudo-companion-classes",
+  "bugs": {
+    "url": "https://github.com/michaeldfoley/postcss-pseudo-companion-classes/issues"
+  },
+  "homepage": "https://github.com/michaeldfoley/postcss-pseudo-companion-classes",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.3.0"
+  },
+  "devDependencies": {
+    "clean-publish": "^3.4.2",
+    "eslint": "^8.0.1",
+    "eslint-plugin-jest": "^25.2.2",
+    "jest": "^27.3.1",
+    "postcss": "^8.3.11",
+    "standard-version": "^9.3.2"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
+  },
+  "dependencies": {}
+}
