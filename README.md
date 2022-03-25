@@ -1,4 +1,11 @@
-# PostCSS Pseudo Companion Classes
+# PostCSS Pseudo Companion Classes [![NPM version][npm-img]][npm] [![Tests][tests-img]][tests] [![Code Coverage][codecov-img]][codecov]
+
+[npm-img]: https://img.shields.io/npm/v/postcss-pseudo-companion-classes.svg
+[npm]: https://www.npmjs.com/package/postcss-pseudo-companion-classes
+[tests-img]: https://github.com/michaeldfoley/postcss-pseudo-companion-classes/workflows/tests/badge.svg
+[tests]:https://github.com/michaeldfoley/postcss-pseudo-companion-classes/actions/workflows/test.yml
+[codecov-img]: https://codecov.io/gh/michaeldfoley/postcss-pseudo-companion-classes/branch/main/graph/badge.svg
+[codecov]: https://codecov.io/gh/michaeldfoley/postcss-pseudo-companion-classes
 
 [PostCSS] plugin to add companion classes to pseudo-classes for testing purposes. This allows you to add the class name to force the styling of a pseudo-class,
 which can be helpful for visual QA and building sticker sheets of all style states.
