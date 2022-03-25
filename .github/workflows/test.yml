@@ -1,4 +1,4 @@
-name: Test
+name: tests
 on:
   push:
   pull_request:
@@ -19,6 +19,13 @@ jobs:
         uses: bahmutov/npm-install@v1
       - name: Run tests
         run: yarn test:full
+      - name: Upload coverage report
+        uses: codecov/codecov-action@v2
+        with:
+          flags: unittests
+          name: codecov-umbrella
+          verbose: true
+
   short:
     runs-on: ubuntu-latest
     strategy:
