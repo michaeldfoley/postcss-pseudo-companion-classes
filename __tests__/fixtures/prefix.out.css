@@ -34,7 +34,7 @@ a.lol.pseudo-class-active {
 }
 
 a:nth-child(5),
-a.pseudo-class-nth-child\(5\) {
+a.pseudo-class-nth-child(5) {
   border: 1px solid papayawhip;
 }
 
@@ -90,12 +90,12 @@ a.pseudo-class-active.pseudo-class-focus + div.pseudo-class-hover {
 }
 
 :global(a:hover),
-:global(a.pseudo-class-hover\) {
+:global(a.pseudo-class-hover) {
   color: cadetblue
 }
 
 :global(a:hover) b:focus,
-:global(a.pseudo-class-hover\) b.pseudo-class-focus {
+:global(a.pseudo-class-hover) b.pseudo-class-focus {
   color: whitesmoke;
 }
 

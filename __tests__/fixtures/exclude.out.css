@@ -32,7 +32,7 @@ a.lol:active {
 }
 
 a:nth-child(5),
-a.\:nth-child\(5\) {
+a.\:nth-child(5) {
   border: 1px solid papayawhip;
 }
 
@@ -96,14 +96,14 @@ a:active.\:focus + div.\:hover {
 }
 
 :global(a:hover),
-:global(a.\:hover\) {
+:global(a.\:hover) {
   color: cadetblue
 }
 
 :global(a:hover) b:focus,
 :global(a:hover) b.\:focus,
-:global(a.\:hover\) b:focus,
-:global(a.\:hover\) b.\:focus {
+:global(a.\:hover) b:focus,
+:global(a.\:hover) b.\:focus {
   color: whitesmoke;
 }
 

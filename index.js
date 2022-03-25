@@ -100,13 +100,7 @@ module.exports = (options = {}) => {
                 return pseudo
               }
 
-              pseudo = pseudo
-                .replace(/^::?/, '')
-                .replace(/\(/g, '\\(')
-                .replace(/\)/g, '\\)')
-
-              
-              const prefixedPseudoClass = `.${prefix}${pseudo}`
+              const prefixedPseudoClass = `.${prefix}${pseudo.replace(/^::?/, '')}`
 
               // Wrap class in :global() to prevent css module rename
               return isModule ? `:global(${prefixedPseudoClass})` : prefixedPseudoClass
