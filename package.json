@@ -11,10 +11,11 @@
     "css modules"
   ],
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
+    "test:full": "yarn test --coverage && yarn lint",
     "lint": "eslint .",
     "publish": "clean-publish",
-    "prerelease": "yarn test && yarn lint",
+    "prerelease": "yarn test:full",
     "release": "standard-version"
   },
   "author": "Michael Foley <michaeldfoley@gmail.com>",
